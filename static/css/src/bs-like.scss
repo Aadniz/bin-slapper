@@ -1,0 +1,45 @@
+.c-m{
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  position: absolute;
+}
+
+.w-min{
+  width: min-content;
+}
+.w-max{
+  width: max-content;
+}
+.h-min{
+  height: min-content;
+}
+.h-max{
+  height: max-content;
+}
+
+.w-fit{
+  width: fit-content;
+  width: -moz-fit-content;
+}
+.h-fit{
+  height: fit-content;
+}
+
+.d-ruby{
+  display: ruby;
+}
+
+.text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+.ratio-1x1{
+  aspect-ratio: 1/1;
+}
+.ratio-2x1{
+  aspect-ratio: 2/1;
+}

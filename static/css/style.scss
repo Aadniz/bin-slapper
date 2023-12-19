@@ -1,0 +1,48 @@
+$theme-colors: (
+        "highlight": #bb313e,
+        "secondary": #300e1f,
+        "white": #FFF,
+        "black": #000
+);
+
+$body-color: map-get($theme-colors, "secondary");
+$body-bg: map-get($theme-colors, "white");
+
+$font-family-base: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+// Margins
+$distances: (
+  "1": 0.25rem,
+  "2": 0.5rem,
+  "3": 1rem,
+  "4": 1.5rem,
+  "5": 3rem
+);
+
+// Font sizes
+$font-sizes: (
+  "0": 4rem,
+  "1": 2.5rem,
+  "2": 2rem,
+  "3": 1.75rem,
+  "4": 1.5rem,
+  "5": 1.25rem,
+  "6": 1rem,
+  "7": 0.85rem
+);
+
+// tooltips settings
+$tooltip-max-width:                 200px;
+$tooltip-color:                     white;
+$tooltip-bg:                        map-get($theme-colors, "darkblue");
+$tooltip-opacity:                   1.0;
+$tooltip-margin:                    0;
+
+$tooltip-arrow-width:               .8rem;
+$tooltip-arrow-height:              .4rem;
+$tooltip-arrow-color:               $tooltip-bg;
+
+@import "src/bootstrap/scss/bootstrap";
+@import "src/bs-like";
+@import "src/general";
+@import "src/fancy-links";

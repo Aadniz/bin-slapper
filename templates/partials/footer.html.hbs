@@ -1,0 +1,10 @@
+<div class="p-2 d-inline-flex w-100 text-pink position-sticky top-100">
+    <div class="w-100">
+        <div class="text-start">Dub & Aadniz {{date_time.year}}</div>
+    </div>
+    <div class="w-100">
+        {{#if start_load_time}}
+            <div class="text-end" title="Server side code execution time">Load time: {{load_time start_load_time}} ms</div>
+        {{/if}}
+    </div>
+</div>

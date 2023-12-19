@@ -1,0 +1,56 @@
+::selection {
+  background: map-get($theme-colors, "highlight");
+  color: #fff;
+}
+
+* {
+  scrollbar-color: map-get($theme-colors, "highlight") map-get($theme-colors, "black") !important;
+  scrollbar-width: thin;
+}
+
+body {
+  /*background-color: map-get($theme-colors, "darkblue");*/
+  min-height: 100vh;
+}
+
+div.proxyBox{
+  @media (min-width: map-get($container-max-widths, "sm")) {
+    width: unset;
+  }
+  @media (min-width: map-get($container-max-widths, "lg")) {
+    width: 48%;
+  }
+  @media (min-width: map-get($container-max-widths, "xl")) {
+    width: 31%;
+  }
+  @media (min-width: map-get($container-max-widths, "xxl")) {
+    width: 23%;
+  }
+}
+
+div.dashboardBoxWrapper {
+  @media (min-width: map-get($container-max-widths, "sm")) {
+    margin-top: map-get($spacers, 5);
+    div.dashboardBox {
+      display: grid;
+      .dashboardItem {
+        width: 50%;
+        margin-bottom: map-get($spacers, 5);
+      }
+    }
+  }
+  @media (min-width: map-get($container-max-widths, "xl")) {
+    margin-top: unset;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    div.dashboardBox{
+      display: flex;
+      justify-content: space-between;
+      .dashboardItem {
+        width: 25%;
+      }
+    }
+  }
+}

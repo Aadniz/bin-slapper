@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACF,IAAI,EAAC,GAAG;EACR,GAAG,EAAC,GAAG;EACP,SAAS,EAAC,qBAAoB;EAC9B,QAAQ,EAAE,QAAQ",
+"sources": ["bs-like.scss"],
+"names": [],
+"file": "bs-like.css"
+}
